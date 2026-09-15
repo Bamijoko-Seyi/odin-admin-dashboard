@@ -165,9 +165,13 @@ html, body {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: repeat(auto, auto);
     grid-template-rows: auto auto;
     gap: 32px;
+}
+
+.projects-side > h2 {
+    margin-bottom: 16px;
 }
 
 .projects-grid > div {
@@ -283,12 +287,30 @@ html, body {
     font-weight: 700;
 }
 
+
+
 .main-grid {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
+    align-items: center;
+    justify-items: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
 }
 
 .projects-side {
-    
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+.announcements-area {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.trending-area {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    margin-top: 32px;
 }
